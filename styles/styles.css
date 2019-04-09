@@ -31,7 +31,9 @@ footer a:hover {
 }
 
 .container-fluid {
-    padding: 60px 50px;
+    
+    position: relative;
+    text-align: center;
   }
 
   .carousel-inner img {
