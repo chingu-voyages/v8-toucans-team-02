@@ -3,7 +3,8 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    
+    color: white;
 }
 
 #testimonios {
@@ -32,3 +33,81 @@ footer a:hover {
 .container-fluid {
     padding: 60px 50px;
   }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about{
+    /* The image used */
+  background-image: url("../images/principal.jpg");
+
+  /* Full height */
+  height: 400px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+  }
+
+  #titulo{
+    padding-top: 0px;
+    width: 800px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    
+    border-top: 70px solid #e1edf7;
+     
+  }
+
+  #logo{
+    padding-top: 0px;
+    width: 50px; 
+     height: 50px; 
+     
+     
+     
+  }
+
+  
+
+  .container {
+    position: relative;
+    text-align: center;
+    
+  }
+  .text-block1 {
+    position: absolute;
+    display: inline-block;  
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+  }
+  .text-block2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+  }
+
+  nav {
+    background-color: blue;
+    color: white;
+
+  }
+
+  .navbar li a, .navbar .navbar-brand {
+    
+    color:white !important;
+}
