@@ -9,15 +9,32 @@ a {
 
 #testimonios {
     background-color: #e0e0e0;
+    background-image: url("../images/testimonios.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #333;
 }
 
+#testimonios a {
+  color: #e0e0e0;
+}
+
+#testimonios a:hover {
+  color: #FFF;
+}
+
 #arrow-left-container, #arrow-right-container {
-    color: hsla(0, 0%, 0%, 0.56);
+    color: #FFF;
+}
+
+.testimonios-card {
+  border-radius: 5px;
+  background-color: hsla(0, 100%, 100%, 0.8);
 }
 
 footer {
-    background-color: #333;
+    background-color: #1F689D;
     color: #e0e0e0
 }
 
