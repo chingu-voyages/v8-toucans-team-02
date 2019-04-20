@@ -1,51 +1,15 @@
-ul {
-    list-style-type: none;
-}
+
 
 a {
     
     color: white;
 }
 
-#testimonios {
-    background-color: #e0e0e0;
-    background-image: url("../images/testimonios.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #333;
-}
 
-#testimonios a {
-  color: #e0e0e0;
-}
 
-#testimonios a:hover {
-  color: #FFF;
-}
 
-#arrow-left-container, #arrow-right-container {
-    color: #FFF;
-}
 
-.testimonios-card {
-  border-radius: 5px;
-  background-color: hsla(0, 100%, 100%, 0.8);
-}
 
-footer {
-    background-color: #1F689D;
-    color: #e0e0e0
-}
-
-footer a {
-    color: #e0e0e0;
-}
-
-footer a:hover {
-    color: #FFF;
-    text-decoration: none;
-}
 
 .container-fluid {
     
@@ -130,4 +94,99 @@ footer a:hover {
     font-family: "Open Sans";
     font-size: 20px;
     color:white !important;
+}
+
+/*                   */
+/*   Sin Bootstrap   */
+/*                   */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF;
+  font-family: Signika;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* Testimonios */
+#testimonios {
+  background-color: #e0e0e0;
+  background-image: url("../images/testimonios.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+#testimonios a {
+color: #e0e0e0;
+}
+
+#testimonios a:hover {
+color: #FFF;
+}
+
+.arrow-container {
+  color: #FFF;
+  margin: 0 1rem 0 1rem;
+}
+
+.testimonios-card {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem;
+  flex: 300px 0 1;
+  border-radius: 5px;
+  background-color: hsla(0, 100%, 100%, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonios-card .row {
+  display: flex;
+}
+
+.quote-left-container {
+  margin-right: 0.5rem;
+}
+
+.quote-right-container {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.5rem;
+}
+
+.name-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1F689D;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+footer a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FFF;
 }
