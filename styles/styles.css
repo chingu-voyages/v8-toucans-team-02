@@ -204,10 +204,16 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  
+  color: orange;
+  
+}
+
 button {
   background-color: orange; /* Green */
   border: none;
-  color: white;
+  color: #1F689D;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -215,7 +221,8 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 /*  fin menu nav en css*/
