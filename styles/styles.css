@@ -342,7 +342,7 @@ margin: 5px;
 }
 
 .left-clip{
-	background-image: url(img/parque.png);
+	background-image: url(images/parque.png);
 	background-repeat: no-repeat;
   	height: 480px;
   	float: left;
@@ -351,7 +351,7 @@ margin: 5px;
 }
 
 .right-clip {
-	background-image: url(img/piscina2.png);
+	background-image: url(images/piscina2.png);
 	background-repeat: no-repeat;
 	opacity: ;
   	height: 480px;
@@ -369,7 +369,7 @@ margin: 5px;
 
 /*Buttons for poligonal sections*/
 
-button {
+.buttonS {
 	display: flex;
 	justify-content: center;
 	align-items: center;
