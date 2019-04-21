@@ -75,7 +75,7 @@ a {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: orange;
+    background-color: #FFC200;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -206,12 +206,12 @@ li a {
 
 li a:hover {
   
-  color: orange;
+  color: #FFC200;
   
 }
 
 button {
-  background-color: orange; /* Green */
+  background-color: #FFC200; /* Green */
   border: none;
   color: #1F689D;
   padding: 10px;
@@ -256,7 +256,7 @@ button {
   bottom: 20px;
     right: 0px;
   padding: 0px;
-  background-color:orange;
+  background-color:#FFC200;
   color: white;
 }
 
@@ -331,18 +331,18 @@ margin: 5px;
 
 /*Poligonal frames with images*/
 .a-left {
-	width: 54%;
+	width: 50%;
 }
 
 .a-right {
-	width: 54%;
+	width: 58%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .left-clip{
-	background-image: url(images\parque.png);
+	background-image: url("../images/parque.png");
 	background-repeat: no-repeat;
   	height: 480px;
   	float: left;
@@ -351,7 +351,7 @@ margin: 5px;
 }
 
 .right-clip {
-	background-image: url(images\piscina2.png);
+	background-image: url("../images/piscina2.png");
 	background-repeat: no-repeat;
   	height: 480px;
  	float: right;
