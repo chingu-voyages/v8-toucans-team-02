@@ -9,8 +9,6 @@ a {
 
 
 
-
-
 .container-fluid {
     
     position: relative;
@@ -47,9 +45,9 @@ a {
   }
 
   #logo{
-    padding-top: 0px;
+    
     width: 50px; 
-     height: 50px; 
+     
      
      
      
@@ -69,8 +67,8 @@ a {
     left: 20px;
     background-color: white;
     color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    
+    
     font-size: 30px;
   }
   .text-block2 {
@@ -84,17 +82,7 @@ a {
     font-size: 30px;
   }
 
-  nav {
-    background-color: #1F689D;
-    color: white;
 
-  }
-
-  .navbar li a, .navbar .navbar-brand {
-    font-family: "Open Sans";
-    font-size: 20px;
-    color:white !important;
-}
 
 /*                   */
 /*   Sin Bootstrap   */
@@ -190,3 +178,91 @@ footer a {
 footer a:hover {
   color: #FFF;
 }
+
+/*  comienzo menu nav en css*/
+
+.nav {
+  background-color: #1F689D; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 50PX;
+  color: white;
+}
+
+li a {
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/*  fin menu nav en css*/
+
+/*  comienzo principal*/
+
+#sevillalogo {
+  float: left;
+  width:50px;
+  height:50px;
+  margin: 0px 30px;
+  
+}
+.text-block1 {
+    position: absolute;
+  margin: 0px;
+  height:50px;
+  width: 500px;
+  top: 20px;
+    left: 0px;
+  padding: 0px;
+  background-color:white;
+  color: #1F689D;
+}
+
+.text-block2 {
+    position: absolute;
+  margin: 0px;
+  height:50px;
+  width: 600px;
+  bottom: 20px;
+    right: 0px;
+  padding: 0px;
+  background-color:orange;
+  color: white;
+}
+
+.text-block2 > h1{
+    font-family: 'Open Sans Condensed';
+}
+
+h1{
+font-size: 30px;
+padding: 0px 5px;
+font-family: "Open Sans";
+margin: 5px;
+
+}
+
+/*  fin principal*/
