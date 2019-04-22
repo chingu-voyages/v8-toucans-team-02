@@ -6,20 +6,46 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="js/index.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
         <div  class="container-fluid"> 
-            <ul class="nav">
-                <li><a href="#home">RESIDENCIA</a></li>
-                <li><a href="#about">RECREACION</a></li>
-                <li><a href="#clients">AREA SOCIAL</a></li>  
-                <li><a href="#contact">DEPORTES</a></li>
-                <li><button>INGRESAR</button></li>
-              </ul>                
-                    
+            <div class="Navbar">
+                <div class="Navbar__Link Navbar__Link-brand">
+                    <a href="#residencia">RESIDENCIA</a>
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="Navbar__Items">
+                    <div class="Navbar__Link">
+                        <a href="#recreacion">RECREACION</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="#area-social">AREA SOCIAL</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="#deportes">DEPORTES</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <button class="buttonM">INGRESAR</button>
+                    </div>
+                </nav>
+                        
+            </div>               
+            <script>
+                    function classToggle() {
+                        const navs = document.querySelectorAll('.Navbar__Items')
+          
+                         navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+                    }
+        
+                    document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+            </script>           
                             
                                   
             
@@ -28,13 +54,14 @@
     <main>
         <section id="principal">
                 <div  class="container-fluid">                
-                        <img src="images/principal.jpg" alt="Nature" style="width:100%;">
+                        <img src="images/principal.jpg" alt="Nature" style="width:100%; height: 480px;">
                         <div class="text-block1">
-                            <img id="sevillalogo" src="images/SevillaLogo.svg" alt="Pineapple" >
-                            <h1>SEVILLA LAS TERRAZAS I</h1>
+                            <button class="buttonP button1"><img id="sevillalogo" src="images/SevillaLogo.svg" alt="Pineapple" style="">
+                              <h1>SEVILLA LAS TERRAZAS I</h1>
+                            </button>
                         </div>
                         <div class="text-block2">
-                            <h1>UN HOGAR SEGURO Y DIVERTIDO PARA TU FAMILIA</h1>
+                            <button class="buttonP button2">UN HOGAR SEGURO Y DIVERTIDO PARA TU FAMILIA</button>
                             </div>
                         
                     </div>
