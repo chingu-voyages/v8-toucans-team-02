@@ -405,7 +405,7 @@ button:hover {
 /*Inicio seccion area social con poligonos diferentes*/
 
 .b-left-clip {
-	background-image: url("../images/salondefiestas.png);
+	background-image: url(../images/salondefiestas.png);
 	background-repeat: no-repeat;
   height: 480px;
   float: left;
@@ -414,9 +414,8 @@ button:hover {
 }
 
 .b-right-clip {
-	background-image: url("../images/churrasqueras.png);
+	background-image: url(../images/churrasqueras.png);
 	background-repeat: no-repeat;
-	opacity: ;
   	height: 480px;
  	float: right;
  	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
@@ -482,8 +481,7 @@ button:hover {
 .c-right-clip {
 	background-image: url(img/gym.jpg);
 	background-repeat: no-repeat;
-	opacity: ;
-  	height: 480px;
+  height: 480px;
  	float: right;
  	-webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
  	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
