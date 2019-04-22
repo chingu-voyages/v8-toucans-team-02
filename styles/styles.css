@@ -331,11 +331,11 @@ margin: 5px;
 
 /*Poligonal frames with images*/
 .a-left {
-	width: 50%;
+	width: 52%;
 }
 
 .a-right {
-	width: 58%;
+	width: 54%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -354,7 +354,8 @@ margin: 5px;
 	background-image: url("../images/piscina2.png");
 	background-repeat: no-repeat;
   	height: 480px;
- 	float: right;
+   float: right;
+   margin: 0;
  	-webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
  	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -366,7 +367,7 @@ margin: 5px;
     margin-left: -6%;
 }
 
-/*Buttons for poligonal sections*/
+/*Buttons for poligonal sections recreacion and deportes*/
 
 .buttonS {
 	display: flex;
@@ -401,6 +402,95 @@ button:hover {
 }
 
 /*Fin de Recreacion*/
+/*Inicio seccion area social con poligonos diferentes*/
+
+.b-left-clip {
+	background-image: url("../images/salondefiestas.png);
+	background-repeat: no-repeat;
+  height: 480px;
+  float: left;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+}
+
+.b-right-clip {
+	background-image: url("../images/churrasqueras.png);
+	background-repeat: no-repeat;
+	opacity: ;
+  	height: 480px;
+ 	float: right;
+ 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+ 	clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+ 	text-align: center;
+ 	color: white;
+}
+
+.b-right {
+	width: 54%;
+}
+
+.b-left {
+	width: 54%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.b-left button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 140%;
+	height: 10%;
+	background-color: #1F689D;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+	font-family:'Roboto Condensed', sans-serif;
+	font-size: 1.7em;
+	letter-spacing: 0.7px;
+	color: #FFF; 
+	-webkit-clip-path: polygon(0 0, 90% 0%, 100% 100%, 10% 100%);
+	clip-path: polygon(0 0, 90% 0%, 100% 100%, 10% 100%);
+}
+
+button:hover {
+	background-color: #FFC200;
+	color: #1F689D;
+}
+
+/*this is just a visual alignment of buttons*/
+.second-b {
+	margin-right: -14%;
+}
+
+.third-b {
+	margin-right: -28%;
+}
+/*fin seccion area social*/
+
+/*poligonos para seccion deportes*/
+.c-left-clip{
+	background-image: url(img/canchas.png);
+	background-repeat: no-repeat;
+  	height: 480px;
+  	float: left;
+  	-webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  	clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.c-right-clip {
+	background-image: url(img/gym.jpg);
+	background-repeat: no-repeat;
+	opacity: ;
+  	height: 480px;
+ 	float: right;
+ 	-webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+ 	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+ 	text-align: center;
+ 	color: white;
+}
+/*fin deportes*/
 
 /* Social para dispositivos mas pequeños */
 @media (max-width: 1250px) {
