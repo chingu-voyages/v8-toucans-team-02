@@ -196,14 +196,10 @@ footer a:hover {
     position: absolute;
     cursor: pointer;
    } 
-   #menu{
-     display: flex;
-   }
+   
    .Navbar__Link-button {
     align-self: flex-start;
-    display: initial;
-    top: 1px;   
-    position: absolute;
+    
     
    } 
 }
