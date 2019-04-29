@@ -404,11 +404,11 @@ button:hover {
 
 /*this is just a visual alignment of buttons*/
 .second-b {
-	margin-left: -14%;
+	margin-left: 14%;
 }
 
 .third-b {
-	margin-left: -28%;
+	margin-left: 28%;
 }
 
 /*Fin de Recreacion*/
@@ -469,12 +469,12 @@ button:hover {
 }
 
 /*this is just a visual alignment of buttons*/
-.primer-b {
-  margin-left: -28%;
+.second {
+  margin-left: -16%;
 }
 
-.second-b {
-	margin-right: -14%;
+.third {
+	margin-left: -30%;
 }
 /*fin seccion area social*/
 
@@ -540,3 +540,117 @@ button:hover {
 }
 /* Fin social dispositivos mas pequeños */
 /* Fin social */
+
+/* Comienzo media queries para cambiar diseño de pagina en dispositivos menores a 768px */
+@media only screen and (max-width: 768px) {
+
+  .a-right, .right-clip, .b-left, .b-left-clip {
+    display:none;
+  }
+  
+  .a-left {
+    width: 90%;
+  }
+  
+  .b-right {
+    width: 90%;
+  }
+  
+  .b-right-clip {
+    position: absolute;
+    right: 0;
+  }
+  
+  /*Buttons row for showing on tablet and mobile devices screen only.Para esconder lo que no necesito
+  y cambiar diagramacion en pantalla movil*/
+  .contenedor-seccion {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons-row-right button button, .buttons-row-right-b button {
+    width: 300px;
+    height: 50px;
+    background-color: #1F689D;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 0.7px;
+    color: #1F689D; 
+    -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 100% 100%);
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 10% 100%);
+  }
+  
+  /*Las mismas caracteristicas pero cambia el clip path y la alineacion de la fila de botones para left*/
+  .buttons-row-left button {
+    width: 300px;
+    height: 50px;
+    background-color: #1F689D;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 0.7px;
+    color: #1F689D; 
+    -webkit-clip-path: polygon(0 0, 85% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 85% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .buttons-row-right button:hover, .buttons-row-right-b button:hover, .buttons-row-left button:hover {
+    background-color: #FFC200;
+    width: 500px;
+  }
+  
+  
+  .bt-one-right, .bt-one-right-b {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .bt-two-right, .bt-two-right-b {
+    position: absolute;
+    right: 0;
+    top: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .bt-three-right, .bt-three-right-b {
+    position: absolute;
+    right: 0;
+    top: 260px;
+    margin-bottom: 20px;
+  }
+  
+  .bt-one-left {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .bt-two-left {
+    position: absolute;
+    left: 0;
+    top: 180px;
+    margin-bottom: 20px;
+  }
+  
+  .bt-three-left {
+    position: absolute;
+    left: 0;
+    top: 260px;
+    margin-bottom: 20px;
+  }
+  
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .buttons-row-right, .buttons-row-left, .buttons-row-right-b {
+    display:none;
+  }	
+  }
+  /* Final media queries para cambiar diseño de pagina en dispositivos menores a 768px */
