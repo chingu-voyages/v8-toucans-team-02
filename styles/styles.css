@@ -27,6 +27,7 @@ a {
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -666,3 +667,38 @@ button:hover {
   }	
   }
   /* Final media queries para cambiar diseño de pagina en dispositivos menores a 768px */
+
+
+/* Inicio boton de Top */
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: rgb(255, 208, 90);
+	cursor: pointer;
+	padding: 8px 8px 4px 8px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+	opacity: 0; /* make things invisible upon start */
+	transform: translateY(-10px);
+
+}
+
+#topBtn img {
+	width: 2rem;
+	transition: width 0.3s 0.3s ease-in;
+}
+
+#topBtn:hover img {
+	width: 1.875rem;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; trasnform: translateY(-10px);}
+	to { opacity: 1; transform: translateY(0px);}
+}
+/* Fin boton de Top */
