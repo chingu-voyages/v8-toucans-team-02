@@ -227,7 +227,7 @@ footer a:hover {
 }
 
 .p-right {
-	width: 54%;
+	width: 48%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -294,8 +294,8 @@ buttonP:hover {
   position: absolute;
   margin: 0px;
   padding: 0px;
-	width: 8%;
-	height: 35%;
+	width: 6.5%;
+	height: 30%;
 	background-color: #1F689D;
 	border: none;
 	cursor: pointer;
@@ -747,7 +747,7 @@ button:hover {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: rgb(255, 208, 90);
+	background-color:#FFC200;;
 	cursor: pointer;
 	padding: 8px 8px 4px 8px;
 	border-radius: 3px;
