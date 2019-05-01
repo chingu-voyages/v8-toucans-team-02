@@ -49,9 +49,9 @@ ul {
   background-size: cover;
   color: #333;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 #testimonios a {
@@ -67,17 +67,40 @@ color: #FFF;
   margin: 0 1rem 0 1rem;
 }
 
-.testimonios-card {
-  margin: 0 1rem 0 1rem;
+
+
+#cardsContainer {
+  width: 80vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.testimoniosCard {
+  margin: 0 25vw;
   padding: 1rem;
-  flex: 300px 0 1;
+  width: 30vw;
+  flex-grow: 0;
+  flex-shrink: 0;
   border-radius: 20px;
   background-color: hsla(0, 100%, 100%, 0.8);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  animation: cardScrollRight 30s linear infinite;
+  animation-play-state: running;
 }
 
-.testimonios-card .row {
+#cardsContainer:hover .testimoniosCard {
+  animation-play-state: paused;
+}
+
+@keyframes cardScrollRight {
+  from {transform: translateX(55vw);}
+  to {transform: translateX(-305vw);}
+}
+
+.testimoniosCard .row {
   display: flex;
 }
 
