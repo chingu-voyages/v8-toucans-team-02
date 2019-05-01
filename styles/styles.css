@@ -117,8 +117,6 @@ footer a:hover {
   color: #FFF;
 }
 
-/* Prueba footer */
-
 #footer-about {
   transform: translateY(12px);
   transition: transform 0.3s;
@@ -139,10 +137,12 @@ footer a:hover {
   opacity: 1;
 }
 
-/* Fin prueba footer */
-
 #footer-users > a {
   margin-right: 0.5rem;
+}
+
+#footer-copy {
+  text-align: center;
 }
 
 #footer-git {
@@ -826,8 +826,8 @@ button:hover {
 #topBtn {
 	display: none;
 	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
+	bottom: 0.5rem;
+	right: 0.5rem;
 	z-index: 99;
 	border: none;
 	outline: none;
