@@ -656,6 +656,7 @@ button:hover {
     height: 50px;
     background-color: #1F689D;
     cursor: pointer;
+    border: none;
     margin-bottom: 20px;
     font-family:'Roboto Condensed', sans-serif;
     font-size: 1.7em;
@@ -671,6 +672,7 @@ button:hover {
     height: 50px;
     background-color: #1F689D;
     cursor: pointer;
+    border: none;
     margin-bottom: 20px;
     font-family:'Roboto Condensed', sans-serif;
     font-size: 1.7em;
