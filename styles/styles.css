@@ -775,6 +775,7 @@ button:hover {
   
   .buttons-row-right button:hover, .buttons-row-right-b button:hover, .buttons-row-left button:hover {
     background-color: #FFC200;
+    opacity: 0.9;
     width: 500px;
   }
   
@@ -782,42 +783,42 @@ button:hover {
   .bt-one-right, .bt-one-right-b {
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 260px;
     margin-bottom: 20px;
   }
   
   .bt-two-right, .bt-two-right-b {
     position: absolute;
     right: 0;
-    top: 180px;
+    top: 330px;
     margin-bottom: 20px;
   }
   
   .bt-three-right, .bt-three-right-b {
     position: absolute;
     right: 0;
-    top: 260px;
+    top: 400px;
     margin-bottom: 20px;
   }
   
   .bt-one-left {
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 260px;
     margin-bottom: 20px;
   }
   
   .bt-two-left {
     position: absolute;
     left: 0;
-    top: 180px;
+    top: 330px;
     margin-bottom: 20px;
   }
   
   .bt-three-left {
     position: absolute;
     left: 0;
-    top: 260px;
+    top: 400px;
     margin-bottom: 20px;
   }
   
