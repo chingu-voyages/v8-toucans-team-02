@@ -164,8 +164,9 @@ footer a:hover {
 }
 
 .Navbar__Link{
-  padding: 0px 30px;
+  padding: 10px 30px;
   font-size: 20px;
+  
 }
 
 .Navbar__Link > a{
@@ -192,31 +193,38 @@ footer a:hover {
 
 .Navbar__Link-toggle {
   display: none;
+  margin: 10px;
 }
 
-.buttonM {
-  background-color: #FFC200; /* Green */
+#menu{
+    display: none;
+}
+
+button {
+  background-color: #FFC200; 
   border: none;
   color: #1F689D;
-  padding: 10px;
-  text-align: center;
+  padding: 5px;
+  margin: 10px;
   text-decoration: none;
-  display: inline-block;
+  
   font-size: 16px;
-  margin: 4px 2px;
+
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
 }
 
-#menu{
-  display: none;
+.logo-img {
+  width: 50px;
+  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
   .Navbar__Items,
   .Navbar {
     flex-direction: column;
+    top: 10px;
   }
   .Navbar__Items {
     display:none;
@@ -230,13 +238,25 @@ footer a:hover {
     display: initial;
     position: absolute;
     cursor: pointer;
+    top: 0px;
+    padding: 10px;
    } 
-   
+
+   .Navbar__Link-brand {
+    height: 25px;
+   } 
+
    .Navbar__Link-button {
     align-self: flex-start;
-    
-    
+    display: initial;
+    top: 0px;   
+    position: absolute;
+    cursor: pointer;
    } 
+
+   #menu{
+       display: flex;
+   }
 }
 
 /*  fin menu nav en css*/
@@ -718,6 +738,7 @@ button:hover {
     height: 50px;
     background-color: #1F689D;
     cursor: pointer;
+    border: none;
     margin-bottom: 20px;
     font-family:'Roboto Condensed', sans-serif;
     font-size: 1.7em;
@@ -733,6 +754,7 @@ button:hover {
     height: 50px;
     background-color: #1F689D;
     cursor: pointer;
+    border: none;
     margin-bottom: 20px;
     font-family:'Roboto Condensed', sans-serif;
     font-size: 1.7em;
