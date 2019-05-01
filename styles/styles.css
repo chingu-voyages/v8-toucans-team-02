@@ -625,13 +625,13 @@ button:hover {
     display: flex;
     flex-direction: row;
     z-index: 2;
-    margin-top: -46px;
+    margin-top: -56px;
     width: 100vw;
     justify-content: space-around;
   }
 
   .social-info-img-movil {
-    height: 30px;
+    height: 40px;
     flex-basis: 80px;
     flex-shrink: 1;
     margin: 8px;
