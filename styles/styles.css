@@ -407,6 +407,10 @@ buttonP:hover {
   height: auto;
 }
 
+.social-info-movil {
+  display: none;
+}
+
 /*Comienzo de Recreacion con Container for section frames*/
 .contenedor-seccion {
 	display: flex;
@@ -608,7 +612,32 @@ button:hover {
     100% {transform: translateX(0%);}
   }
 
+  #residencia {
+    flex-wrap: wrap;
+  }
+
   .social-info {
+    display: none;
+  }
+
+  .social-info-movil {
+    background-color: rgba(31, 104, 157, 0.7);
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    margin-top: -46px;
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  .social-info-img-movil {
+    height: 30px;
+    flex-basis: 80px;
+    flex-shrink: 1;
+    margin: 8px;
+  }
+
+  /*.social-info {
     flex-direction: row;
     padding: 1rem;
   }
@@ -618,7 +647,7 @@ button:hover {
     flex-basis: 180px;
     flex-shrink: 1;
     margin: 0.5rem;
-  }
+  }*/
 }
 /* Fin social dispositivos mas pequeños */
 /* Fin social */
