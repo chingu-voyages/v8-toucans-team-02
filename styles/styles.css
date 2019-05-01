@@ -347,7 +347,7 @@ buttonP:hover {
 	height: 15%;
 	-webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .penta {
@@ -357,8 +357,8 @@ buttonP:hover {
 
 .titulo{
   top:10%;
-  
 }
+
 }
 
 /*  fin principal*/
