@@ -217,6 +217,7 @@ footer a:hover {
 .Navbar__Link-toggle {
   display: none;
   margin: 10px;
+  color:#FFC200;
 }
 
 #menu{
