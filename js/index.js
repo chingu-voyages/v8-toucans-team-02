@@ -21,3 +21,7 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 /* Fin del comportamiento del boton de Top */
+
+function piscinaFunc() {
+	document.getElementById("niñaContainer").style.backgroundImage = "url('images/testimonios.jpg')";
+}
