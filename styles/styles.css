@@ -8,6 +8,8 @@ a {
     
     position: relative;
     text-align: center;
+    z-index: 1;
+    box-shadow: 0 3px 12px 0px rgba(0, 0, 0, 0.8);
     
   }
 
@@ -373,7 +375,7 @@ buttonP:hover {
 /*  logo superior izq*/
 .penta {
   position: absolute;
-  margin: 0px;
+  margin: -2px 0 0 0;
   padding: 0px;
 	width: 6.5%;
 	height: 30%;
@@ -388,14 +390,27 @@ buttonP:hover {
 	letter-spacing: 0.7px;
   color: #FFF; 
   bottom: -150px;
+  transform: translateY(-74px);
+  animation: pageLoad 0.5s 0.2s ease-in forwards;
 	-webkit-clip-path: polygon(50% 100%, 100% 65%, 100% 0, 0 0, 0 65%);
   clip-path: polygon(50% 100%, 100% 65%, 100% 0, 0 0, 0 65%);
   
 }
 
+@keyframes pageLoad {
+  from {transform: translateY(-74px);}
+  to {transform: translateY(0);}
+}
+
 .sevillalogo{
   width: 80%;
-  margin: 10%;
+  margin: 20% 10% 10% 10%;
+  transform: scale(1);
+  transition: transform 0.2s 0.1s ease-in;
+}
+
+.sevillalogo:hover {
+  transform: scale(1.1);
 }
 
 /*  titulo contenedor izq*/
@@ -451,6 +466,8 @@ buttonP:hover {
 #residencia {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .slideshow {
