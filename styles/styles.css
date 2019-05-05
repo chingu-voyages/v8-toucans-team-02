@@ -773,7 +773,7 @@ button:hover {
   }
     
    .c-left-clip {
-    background-image: url(../images/canchasPeq2.png)
+    background-image: url(../images/canchasPeq2.png);
     background-repeat: no-repeat;
     height: 300px;
     position: absolute;

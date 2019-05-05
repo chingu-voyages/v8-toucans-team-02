@@ -2,7 +2,7 @@
 <head>
     <title>CONDOMINIO SEVILLA LAS TERRAZAS I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/icons/SevillaLogo-favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/Sfavicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto Condensed:300" rel="stylesheet">
@@ -80,9 +80,9 @@
         </section>
         <section id="residencia">
             <div class="slideshow">
-                <img class="mySlides" src="images/slider-area-comun.jpg" alt="">
+                <img class="mySlides" src="images/slider-areasVerdes.png" alt="">
                 <img class="mySlides" src="images/slider-guarderia.png" alt="">
-                <img class="mySlides" src="images/slider-piscina.png" alt="">
+                <img class="mySlides" src="images/slider-seguridad.png" alt="">
             </div>
             <div class="social-info">
                 <img class="social-info-img" src="images/icons/Seguridad.svg" alt="">
@@ -104,17 +104,17 @@
     <!--En esta seccion hay dos divs para cada media query de recreacion-->
                 <div class="a-right right-clip block">
                     <ul>
-                        <li><button id="btnPiscinaOlimpica" onclick="piscinaFunc()" class="buttonS">PISCINA OLÍMPICA</button></li>
-                        <li><button class="second buttonS">PISCINA PARA NIÑOS</button></li>
-                        <li><button class="third buttonS">PARQUES INFANTILES</button></li>
+                        <li><button onclick="piscinaFunc()" class="buttonS">PISCINA OLÍMPICA</button></li>
+                        <li><button onclick="piscinaKidsFunc()" class="second buttonS">PISCINA PARA NIÑOS</button></li>
+                        <li><button onclick="parqueInFunc()" class="third buttonS">PARQUES INFANTILES</button></li>
                     </ul>
                 </div>
     
                 <div class="buttons-row-right block">
                     <ul>
-                        <li><button class="bt-one-right">PISCINA OLÍMPICA</button></li>
-                        <li><button class="bt-two-right">PISCINA PARA NIÑOS</button></li>
-                        <li><button class="bt-three-right">PARQUES INFANTILES</button></li>
+                        <li><button onclick="piscinaDosFunc()" class="bt-one-right">PISCINA OLÍMPICA</button></li>
+                        <li><button onclick="piscinaKidsDosFunc()" class="bt-two-right">PISCINA PARA NIÑOS</button></li>
+                        <li><button onclick="parqueInDosFunc()" class="bt-three-right">PARQUES INFANTILES</button></li>
                     </ul>
                 </div>
     <!--Aqui termina la parte que define el media query de recreacion-->
@@ -125,21 +125,21 @@
                 <!--En esta seccion hay dos divs para cada media query de area social-->
                             <div class="b-left b-left-clip block">
                                     <ul>
-                                    <li><button >CHURRASQUERAS</button></li>
-                                    <li><button class="second-b">SALÓN DE FIESTAS</button></li>
-                                    <li><button class="third-b">ARENEROS</button></li>
+                                    <li><button onclick="churrasqueraFunc()" >CHURRASQUERAS</button></li>
+                                    <li><button onclick="salonDeFiestaFunc()" class="second-b">SALÓN DE FIESTAS</button></li>
+                                    <li><button onclick="areneroFunc()" class="third-b">ARENEROS</button></li>
                                 </ul>
                             </div>
                 
                 
-                            <div class="b-right b-right-clip block">
+                            <div id="areneroContainer"class="b-right b-right-clip block">
                             </div>
                 <!--Media query 790px de area social-->				
                             <div class="buttons-row-left block">
                                 <ul>
-                                    <li><button class="bt-one-left">CHURRASQUERAS</button></li>
-                                    <li><button class="bt-two-left">SALÓN DE FIESTAS</button></li>
-                                    <li><button class="bt-three-left">ARENEROS</button></li>
+                                    <li><button onclick="churrasqueraDosFunc()" class="bt-one-left">CHURRASQUERAS</button></li>
+                                    <li><button onclick="salonDeFiestaDosFunc()" class="bt-two-left">SALÓN DE FIESTAS</button></li>
+                                    <li><button onclick="areneroDosFunc()" class="bt-three-left">ARENEROS</button></li>
                                 </ul>
                             </div>
                             
@@ -148,23 +148,23 @@
         <section id="deportes">
             <div class= "contenedor-seccion">
 
-                <div class="a-left c-left-clip block">
+                <div id="deportesContainer" class="a-left c-left-clip block">
                     
                 </div>
     <!--En esta seccion hay dos divs para cada media query de deportes-->
                 <div class="a-right c-right-clip block">
                     <ul>
-                        <li><button class="buttonS">GIMNASIO</button></li>
-                        <li><button class="second buttonS">CANCHAS</button></li>
-                        <li><button class="third buttonS">SALA DE AERÓBICOS</button></li>
+                        <li><button onclick="gimnasioFunc()" class="buttonS">GIMNASIO</button></li>
+                        <li><button onclick="canchasFunc()" class="second buttonS">CANCHAS</button></li>
+                        <li><button onclick="salaAeroFunc()" class="third buttonS">SALA DE AERÓBICOS</button></li>
                     </ul>
                 </div>
     
                 <div class="buttons-row-right-b block">
                     <ul>
-                        <li><button class="bt-one-right-b">GIMNASIO</button></li>
-                        <li><button class="bt-two-right-b">CANCHAS</button></li>
-                        <li><button class="bt-three-right-b">SALA DE AERÓBICOS</button></li>
+                        <li><button onclick="gimnasioDosFunc()"class="bt-one-right-b">GIMNASIO</button></li>
+                        <li><button onclick="canchasDosFunc()" class="bt-two-right-b">CANCHAS</button></li>
+                        <li><button onclick="salaAeroDosFunc()" class="bt-three-right-b">SALA DE AERÓBICOS</button></li>
                     </ul>
                 </div>
     <!--Aqui termina la parte que define el media query de deportes-->
