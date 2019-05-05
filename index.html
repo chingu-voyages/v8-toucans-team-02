@@ -1,0 +1,272 @@
+<!DOCTYPE html lang="es">
+<head>
+    <title>CONDOMINIO SEVILLA LAS TERRAZAS I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Sfavicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400i" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div  class="container-fluid"> 
+            <div class="Navbar">
+                    
+                <div class="Navbar__Link Navbar__Link-brand" id="menu">
+                    <img class="logo-img" src="images/SevillaLogo.svg" alt="">
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                  
+                <nav class="Navbar__Items">
+                    <div class="Navbar__Link">
+                        <a href="#residencia">RESIDENCIA</a>
+                    </div>
+                    <div class="Navbar__Link">
+                            <a href="#recreacion">RECREACION</a>
+                        </div>
+                    <div class="Navbar__Link">
+                        <a href="#area-social">AREA SOCIAL</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="#deportes">DEPORTES</a>
+                    </div>
+                    
+                </nav>
+                
+            </div>               
+            <script>
+                    function classToggle() {
+                        const navs = document.querySelectorAll('.Navbar__Items')
+          
+                         navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+                    }
+        
+                    document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+            </script>           
+                            
+                                  
+            
+        </div>
+    </header>
+    <main>
+        <section id="principal">
+            <div>
+                <div class= "contenedor-principal">
+                   <div class="p-left leftP-clip blockP">
+                        <div class="penta">
+                            <img class="sevillalogo" src="images/SevillaLogo.svg">
+                        </div>
+                        <div class="titulo">
+                            <div><p>CONDOMINIO SEVILLA</p></div>
+                            <div><p style="font-size: 60px;">TERRAZAS I</p></div>
+                        </div>
+                    </div>
+                    <div class="p-right rightP-clip blockP">
+                    </div>
+                    <button class=" third-P buttonP">UN HOGAR SEGURO Y DIVERTIDO PARA TU FAMILIA</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="residencia">
+            <div class="slideshow">
+                <img class="mySlides" src="images/slider-areasVerdes.png" alt="">
+                <img class="mySlides" src="images/slider-guarderia.png" alt="">
+                <img class="mySlides" src="images/slider-seguridad.png" alt="">
+            </div>
+            <div class="social-info">
+                <img class="social-info-img" src="images/icons/Seguridad.svg" alt="">
+                <img class="social-info-img" src="images/icons/AreasVerdes.svg" alt="">
+                <img class="social-info-img" src="images/icons/Guarderia.svg" alt="">
+            </div>
+            <div class="social-info-movil">
+                <img src="images/icons/SeguridadBlanco.svg" alt="" class="social-info-img-movil">
+                <img src="images/icons/AreasVerdesBlanco.svg" alt="" class="social-info-img-movil">
+                <img src="images/icons/GuarderiaBlanco.svg" alt="" class="social-info-img-movil">
+            </div>
+        </section>
+        <section id="recreacion">
+            <div class= "contenedor-seccion">
+
+                <div id="niñaContainer" class="a-left left-clip block">
+                    
+                </div>
+    <!--En esta seccion hay dos divs para cada media query de recreacion-->
+                <div class="a-right right-clip block">
+                    <ul>
+                        <li><button onclick="piscinaFunc()" class="buttonS">PISCINA OLÍMPICA</button></li>
+                        <li><button onclick="piscinaKidsFunc()" class="second buttonS">PISCINA PARA NIÑOS</button></li>
+                        <li><button onclick="parqueInFunc()" class="third buttonS">PARQUES INFANTILES</button></li>
+                    </ul>
+                </div>
+    
+                <div class="buttons-row-right block">
+                    <ul>
+                        <li><button onclick="piscinaDosFunc()" class="bt-one-right">PISCINA OLÍMPICA</button></li>
+                        <li><button onclick="piscinaKidsDosFunc()" class="bt-two-right">PISCINA PARA NIÑOS</button></li>
+                        <li><button onclick="parqueInDosFunc()" class="bt-three-right">PARQUES INFANTILES</button></li>
+                    </ul>
+                </div>
+    <!--Aqui termina la parte que define el media query de recreacion-->
+            </div>
+        </section>
+        <section id="area-social">
+            <div class= "contenedor-seccion">
+                <!--En esta seccion hay dos divs para cada media query de area social-->
+                            <div class="b-left b-left-clip block">
+                                    <ul>
+                                    <li><button onclick="churrasqueraFunc()" >CHURRASQUERAS</button></li>
+                                    <li><button onclick="salonDeFiestaFunc()" class="second-b">SALÓN DE FIESTAS</button></li>
+                                    <li><button onclick="areneroFunc()" class="third-b">ARENEROS</button></li>
+                                </ul>
+                            </div>
+                
+                
+                            <div id="areneroContainer"class="b-right b-right-clip block">
+                            </div>
+                <!--Media query 790px de area social-->				
+                            <div class="buttons-row-left block">
+                                <ul>
+                                    <li><button onclick="churrasqueraDosFunc()" class="bt-one-left">CHURRASQUERAS</button></li>
+                                    <li><button onclick="salonDeFiestaDosFunc()" class="bt-two-left">SALÓN DE FIESTAS</button></li>
+                                    <li><button onclick="areneroDosFunc()" class="bt-three-left">ARENEROS</button></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+        </section>
+        <section id="deportes">
+            <div class= "contenedor-seccion">
+
+                <div id="deportesContainer" class="a-left c-left-clip block">
+                    
+                </div>
+    <!--En esta seccion hay dos divs para cada media query de deportes-->
+                <div class="a-right c-right-clip block">
+                    <ul>
+                        <li><button onclick="gimnasioFunc()" class="buttonS">GIMNASIO</button></li>
+                        <li><button onclick="canchasFunc()" class="second buttonS">CANCHAS</button></li>
+                        <li><button onclick="salaAeroFunc()" class="third buttonS">SALA DE AERÓBICOS</button></li>
+                    </ul>
+                </div>
+    
+                <div class="buttons-row-right-b block">
+                    <ul>
+                        <li><button onclick="gimnasioDosFunc()"class="bt-one-right-b">GIMNASIO</button></li>
+                        <li><button onclick="canchasDosFunc()" class="bt-two-right-b">CANCHAS</button></li>
+                        <li><button onclick="salaAeroDosFunc()" class="bt-three-right-b">SALA DE AERÓBICOS</button></li>
+                    </ul>
+                </div>
+    <!--Aqui termina la parte que define el media query de deportes-->
+            </div>
+        </section>
+        <section id="testimonios">
+            <div id="arrow-left-container" class="arrow-container">
+                <a><i class="fas fa-chevron-left fa-2x"></i></a>
+            </div>
+            <div id="cardsContainer">
+                <div class="testimoniosCard">
+                    <div class="row">
+                        <div class="quote-left-container">
+                            <i class="fas fa-quote-left fa-lg"></i>
+                        </div>
+                        <div class="testimonios-text-container">
+                            <p class="text-justify">Maravilloso lugar transmite tranquilidad 
+                                y todas sus areas son magnificas, muy buen condominio</p>
+                        </div>
+                        <div class="quote-right-container">
+                            <i class="fas fa-quote-right fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="name-container">
+                        <h4>Daniela Mendez</h4>
+                    </div>
+                </div>
+                <div class="testimoniosCard">
+                    <div class="row">
+                        <div class="quote-left-container">
+                            <i class="fas fa-quote-left fa-lg"></i>
+                        </div>
+                        <div class="testimonios-text-container">
+                            <p class="text-justify">Es como vivir en el paraíso! La 
+                                arboleda de pinos no tiene comparación, hermoso lugar!</p>
+                        </div>
+                        <div class="quote-right-container">
+                            <i class="fas fa-quote-right fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="name-container">
+                        <h4>Luis Prieto</h4>
+                    </div>
+                </div>
+                <div class="testimoniosCard">
+                    <div class="row">
+                        <div class="quote-left-container">
+                            <i class="fas fa-quote-left fa-lg"></i>
+                        </div>
+                        <div class="testimonios-text-container">
+                            <p class="text-justify">Como un hotel de 5 estrellas en el 
+                                Caribe, al final la casa esta de yapa!</p>
+                        </div>
+                        <div class="quote-right-container">
+                            <i class="fas fa-quote-right fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="name-container">
+                        <h4>Jesus Fernandez</h4>
+                    </div>
+                </div>
+                <div class="testimoniosCard">
+                    <div class="row">
+                        <div class="quote-left-container">
+                            <i class="fas fa-quote-left fa-lg"></i>
+                        </div>
+                        <div class="testimonios-text-container">
+                            <p class="text-justify">Hermoso lugar. Estoy feliz de 
+                                vivir en Sevilla</p>
+                        </div>
+                        <div class="quote-right-container">
+                            <i class="fas fa-quote-right fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="name-container">
+                        <h4>Alejandra Avalos</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="arrow-right-container" class="arrow-container">
+                <a><i class="fas fa-chevron-right fa-2x"></i></a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+                <div id="footer-nav">
+                    <ul id="footer-list">
+                        <li id="footer-about">NOSOTROS</li>
+                        <li id="footer-users">
+                            <a href="https://github.com/marceloc78">Marcelo</a> 
+                            <a href="https://github.com/FuZz8Sanchez">Miraca</a> 
+                            <a href="https://github.com/hernandoagf">Hernando</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footer-copy">
+                    <p>&copy; 2019. Chingu <strong>Voyage 8</strong> Toucans team 02</p>
+                </div>
+                <div id="footer-git">
+                    <a href="https://github.com/chingu-voyages/v8-toucans-team-02" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="images/icons/top.svg">
+    </button>
+</body>
